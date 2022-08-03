@@ -50,7 +50,7 @@ class TipoDeRopaMockTest extends TestCase
 
     public function testCompruebaElTiempoEnLaCiudadIndicada()
     {
-        $ciudad = 'Alicante';
+        $ciudad = 'Merida';
         $numeroAleatorio = 12345;
         
         $this->tiempoApi->expects($this->once())->method('queTemperaturaHaceEn')->with($ciudad)->willReturn($numeroAleatorio);
