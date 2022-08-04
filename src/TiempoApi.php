@@ -15,7 +15,7 @@ class TiempoApi
         $httpRequestFactory = new RequestFactory();
         $httpClient = GuzzleAdapter::createWithConfig([]);
 
-        $this->openWeatherMap = new OpenWeatherMap('abc1dd4b6505369e3f78e803ebe0b540', $httpClient, $httpRequestFactory);
+        $this->openWeatherMap = new OpenWeatherMap('personal-key-token', $httpClient, $httpRequestFactory);
     }
 
     public function queTemperaturaHaceEn(string $ciudad): int
